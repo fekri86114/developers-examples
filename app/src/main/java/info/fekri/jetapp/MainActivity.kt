@@ -34,6 +34,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun DefaultPreview() {
+    LemonApp()
+}
+
 @Composable
 fun LemonApp() {
     var currentStep by remember { mutableStateOf(1) }
@@ -148,10 +154,4 @@ fun LemonApp() {
         }
     }
 
-}
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun DefaultPreview() {
-    LemonApp()
 }
